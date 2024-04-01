@@ -1,0 +1,27 @@
+package br.com.fiap;
+
+public class ArCondicionadoEncapsulado {
+	
+	private int temperatura;
+	private String modo;
+	
+	public int getTemperatura() {
+		return temperatura;
+	}
+	public void setTemperatura(int temperatura) {
+		this.temperatura = temperatura;
+	}
+	public String getModo() {
+		return modo;
+	}
+	public void setModo(String modo) {
+		this.modo = modo;
+	}
+	
+	// métodos
+	
+	public void aumentarTemperatura() {
+		temperatura++;
+	}
+	
+}

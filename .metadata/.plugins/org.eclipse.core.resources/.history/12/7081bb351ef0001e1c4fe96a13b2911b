@@ -1,0 +1,24 @@
+package br.com.fiap;
+
+import java.util.Scanner;
+
+public class UsaTelevisorE {
+	public static void main(String[] args) {
+		TelevisorEncapsulado tv = new TelevisorEncapsulado();
+		
+		int canal, volume, escolha;
+		Scanner scan;
+		
+		try {
+			scan = new Scanner(System.in);
+			System.out.println("Escolha seu canal de TV");
+			canal = scan.nextInt();
+			System.out.println("Escolha o nível do volume");
+			volume = scan.nextInt();
+			tv.setCanal(canal);
+			tv.setVolume(volume);
+		} catch (Exception e) {
+			System.out.println("Formato incorreto.");
+		}
+	}
+}
